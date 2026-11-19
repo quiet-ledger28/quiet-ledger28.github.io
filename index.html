@@ -1,0 +1,1490 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>男男 - 多元情感影像社区 | 官方品牌内容门户</title>
+<meta name="description" content="男男官方网站是专注多元情感表达与同好创作的高品质影像内容社区，汇聚原创创作者、精品专题与企业动态，打造值得信赖的内容生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237c5cff'/%3E%3Cstop offset='1' stop-color='%23ff6f9c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Cpath d='M20 44V20h8l4 8 4-8h8v24h-6V30l-4 8h-4l-4-8v14z' fill='%23fff'/%3E%3C/svg%3E">
+<style>
+:root{
+  --nnn-ink:#1c1730;
+  --nnn-ink-soft:#4a4463;
+  --nnn-muted:#8a84a3;
+  --nnn-bg:#f6f4ff;
+  --nnn-card:#ffffff;
+  --nnn-violet:#7c5cff;
+  --nnn-violet-deep:#5a3ee0;
+  --nnn-rose:#ff6f9c;
+  --nnn-mint:#3ec6b4;
+  --nnn-gold:#f5b544;
+  --nnn-line:#e7e2f5;
+  --nnn-shadow:0 12px 34px -18px rgba(70,49,150,.45);
+  --nnn-radius:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:136px}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  background:var(--nnn-bg);
+  color:var(--nnn-ink);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+ul{list-style:none}
+
+/* ============ 吸顶容器 ============ */
+.nnn-sticky-shell{
+  position:sticky;top:0;z-index:120;
+}
+.nnn-announce{
+  background:linear-gradient(90deg,var(--nnn-violet-deep),var(--nnn-violet) 55%,var(--nnn-rose));
+  color:#fff;
+  font-size:13px;
+  letter-spacing:.02em;
+}
+.nnn-announce-inner{
+  max-width:1240px;margin:0 auto;padding:9px 22px;
+  display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+}
+.nnn-announce-badge{
+  flex:none;
+  background:rgba(255,255,255,.2);
+  border:1px solid rgba(255,255,255,.4);
+  border-radius:999px;
+  padding:1px 10px;
+  font-size:11px;font-weight:700;letter-spacing:.08em;
+}
+.nnn-announce-text{opacity:.96}
+.nnn-announce-text strong{font-weight:700}
+.nnn-announce-link{
+  margin-left:auto;flex:none;
+  font-weight:600;font-size:12px;
+  border-bottom:1px dashed rgba(255,255,255,.7);
+  padding-bottom:1px;white-space:nowrap;
+}
+
+/* ============ 页头 ============ */
+.nnn-header{
+  background:rgba(255,255,255,.9);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--nnn-line);
+}
+.nnn-header-inner{
+  max-width:1240px;margin:0 auto;padding:12px 22px;
+  display:flex;align-items:center;gap:20px;
+}
+.nnn-brand{display:flex;align-items:center;gap:11px;flex:none}
+.nnn-brand-mark{
+  width:42px;height:42px;border-radius:13px;
+  background:linear-gradient(135deg,var(--nnn-violet),var(--nnn-rose));
+  color:#fff;font-weight:800;font-size:19px;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 8px 18px -8px rgba(124,92,255,.85);
+}
+.nnn-brand-word{font-size:19px;font-weight:800;letter-spacing:.02em;line-height:1.2}
+.nnn-brand-sub{font-size:11px;color:var(--nnn-muted);letter-spacing:.14em;font-weight:500}
+.nnn-nav{display:flex;align-items:center;gap:4px;margin-left:8px;flex-wrap:wrap}
+.nnn-nav a{
+  font-size:14.5px;font-weight:500;color:var(--nnn-ink-soft);
+  padding:8px 13px;border-radius:10px;transition:.22s;
+}
+.nnn-nav a:hover,.nnn-nav a.is-active{background:#efeaff;color:var(--nnn-violet-deep)}
+.nnn-head-tools{margin-left:auto;display:flex;align-items:center;gap:10px}
+.nnn-search{
+  display:flex;align-items:center;gap:8px;
+  background:#f1eefc;border:1px solid transparent;
+  border-radius:999px;padding:7px 14px;width:230px;transition:.25s;
+}
+.nnn-search:focus-within{background:#fff;border-color:var(--nnn-violet);box-shadow:0 0 0 4px rgba(124,92,255,.12)}
+.nnn-search input{
+  border:none;outline:none;background:transparent;font-size:13.5px;
+  width:100%;color:var(--nnn-ink);font-family:inherit;
+}
+.nnn-search input::placeholder{color:#a7a1bd}
+.nnn-search-btn{flex:none;color:var(--nnn-violet-deep);display:flex}
+.nnn-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  font-size:14px;font-weight:600;border-radius:12px;padding:10px 20px;transition:.22s;
+}
+.nnn-btn-primary{
+  background:linear-gradient(120deg,var(--nnn-violet),var(--nnn-rose));
+  color:#fff;box-shadow:0 12px 24px -14px rgba(124,92,255,.95);
+}
+.nnn-btn-primary:hover{transform:translateY(-2px);box-shadow:0 18px 30px -14px rgba(124,92,255,.95)}
+.nnn-btn-ghost{background:#fff;color:var(--nnn-violet-deep);border:1px solid var(--nnn-line)}
+.nnn-btn-ghost:hover{border-color:var(--nnn-violet);background:#faf8ff}
+.nnn-btn-soft{background:#efeaff;color:var(--nnn-violet-deep)}
+.nnn-btn-soft:hover{background:#e3dbff}
+.nnn-nav-toggle{
+  display:none;width:42px;height:42px;border-radius:12px;
+  background:#f1eefc;color:var(--nnn-violet-deep);
+  align-items:center;justify-content:center;font-size:19px;
+}
+.nnn-search-hint{
+  display:none;font-size:12.5px;color:var(--nnn-muted);
+  padding:6px 22px 12px;max-width:1240px;margin:0 auto;
+}
+.nnn-search-hint.is-show{display:block}
+.nnn-search-hint strong{color:var(--nnn-violet-deep)}
+
+/* ============ 通用布局 ============ */
+.nnn-wrap{max-width:1240px;margin:0 auto;padding:0 22px}
+.nnn-section{padding:74px 0}
+.nnn-section-tint{background:linear-gradient(180deg,#fff,#f6f4ff)}
+.nnn-sec-head{max-width:760px;margin-bottom:38px}
+.nnn-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12px;font-weight:700;letter-spacing:.18em;
+  color:var(--nnn-violet-deep);text-transform:uppercase;margin-bottom:12px;
+}
+.nnn-eyebrow::before{content:"";width:22px;height:2px;background:var(--nnn-rose);border-radius:2px}
+.nnn-sec-title{font-size:31px;font-weight:800;letter-spacing:-.01em;line-height:1.3}
+.nnn-sec-desc{margin-top:12px;color:var(--nnn-ink-soft);font-size:15px}
+
+/* ============ 首屏 ============ */
+.nnn-hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(900px 460px at 88% -10%, rgba(255,111,156,.22), transparent 62%),
+    radial-gradient(760px 480px at 8% 110%, rgba(124,92,255,.24), transparent 60%),
+    linear-gradient(160deg,#fff 0%,#f4f0ff 100%);
+  border-bottom:1px solid var(--nnn-line);
+}
+.nnn-hero-inner{
+  max-width:1240px;margin:0 auto;padding:70px 22px 76px;
+  display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;
+}
+.nnn-hero-tagline{
+  display:inline-flex;align-items:center;gap:9px;
+  background:#fff;border:1px solid var(--nnn-line);
+  border-radius:999px;padding:6px 15px;
+  font-size:12.5px;font-weight:600;color:var(--nnn-violet-deep);
+  box-shadow:var(--nnn-shadow);margin-bottom:22px;
+}
+.nnn-hero-tagline i{width:7px;height:7px;border-radius:50%;background:var(--nnn-mint);display:block}
+.nnn-hero h1{
+  font-size:clamp(34px,4.4vw,56px);
+  font-weight:900;line-height:1.14;letter-spacing:-.02em;
+}
+.nnn-hero h1 span{
+  background:linear-gradient(115deg,var(--nnn-violet),var(--nnn-rose));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.nnn-hero-lead{
+  margin-top:20px;font-size:16px;color:var(--nnn-ink-soft);max-width:560px;
+}
+.nnn-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.nnn-hero-stats{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:14px;
+  margin-top:38px;padding-top:26px;border-top:1px dashed var(--nnn-line);
+}
+.nnn-hero-stat b{display:block;font-size:25px;font-weight:800;letter-spacing:-.02em}
+.nnn-hero-stat span{font-size:12.5px;color:var(--nnn-muted)}
+.nnn-hero-visual{position:relative}
+.nnn-hero-cover{
+  border-radius:26px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(58,38,140,.6);
+  border:6px solid #fff;transform:rotate(-1.4deg);
+}
+.nnn-hero-cover img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.nnn-hero-cover-meta{
+  position:absolute;left:22px;bottom:20px;right:22px;
+  color:#fff;font-size:13px;font-weight:600;
+  display:flex;align-items:center;gap:9px;
+}
+.nnn-live-dot{width:8px;height:8px;border-radius:50%;background:var(--nnn-rose);box-shadow:0 0 0 4px rgba(255,111,156,.3)}
+.nnn-hero-float{
+  position:absolute;right:-14px;top:-18px;
+  background:#fff;border-radius:16px;padding:13px 17px;
+  box-shadow:var(--nnn-shadow);font-size:12.5px;line-height:1.5;
+  border:1px solid var(--nnn-line);max-width:190px;
+}
+.nnn-hero-float b{display:block;color:var(--nnn-violet-deep);font-size:13px}
+.nnn-hero-float-sm{
+  position:absolute;left:-18px;bottom:-16px;
+  background:#1c1730;color:#fff;border-radius:14px;padding:11px 15px;
+  font-size:12px;box-shadow:0 18px 34px -18px rgba(28,23,48,.9);
+}
+
+/* ============ 关键词解析 ============ */
+.nnn-about{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:start}
+.nnn-about-card{
+  background:#fff;border:1px solid var(--nnn-line);border-radius:22px;
+  padding:28px 28px 30px;box-shadow:var(--nnn-shadow);position:sticky;top:150px;
+}
+.nnn-about-card h3{font-size:18px;margin-bottom:14px}
+.nnn-about-card p{font-size:14px;color:var(--nnn-ink-soft);margin-bottom:12px}
+.nnn-about-badge{
+  display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:600;
+  background:#efeaff;color:var(--nnn-violet-deep);border-radius:999px;padding:5px 12px;margin-bottom:16px;
+}
+.nnn-about-body p{font-size:15.2px;color:var(--nnn-ink-soft);margin-bottom:16px}
+.nnn-about-body h3{font-size:19px;margin:26px 0 10px;letter-spacing:-.01em}
+.nnn-about-body strong{color:var(--nnn-ink)}
+.nnn-about-quote{
+  margin:22px 0;padding:18px 22px;border-left:4px solid var(--nnn-rose);
+  background:#fff;border-radius:0 16px 16px 0;font-size:14.5px;color:var(--nnn-ink-soft);
+  box-shadow:var(--nnn-shadow);
+}
+
+/* ============ 焦点视频 ============ */
+.nnn-focus-grid{
+  display:grid;grid-template-columns:1.35fr 1fr;gap:24px;
+}
+.nnn-vcard{
+  background:#fff;border:1px solid var(--nnn-line);border-radius:var(--nnn-radius);
+  overflow:hidden;transition:.28s;display:flex;flex-direction:column;
+}
+.nnn-vcard:hover{transform:translateY(-5px);box-shadow:var(--nnn-shadow);border-color:#d9cfff}
+.nnn-thumb{position:relative;overflow:hidden;background:#e9e5f7}
+.nnn-thumb img{width:100%;aspect-ratio:16/9;object-fit:cover;transition:.5s}
+.nnn-vcard:hover .nnn-thumb img{transform:scale(1.045)}
+.nnn-thumb-shade{
+  position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(28,23,48,0) 42%,rgba(28,23,48,.72));
+}
+.nnn-thumb-tag{
+  position:absolute;left:12px;top:12px;font-size:11.5px;font-weight:700;
+  color:#fff;background:rgba(124,92,255,.88);border-radius:7px;padding:3px 9px;
+  backdrop-filter:blur(4px);
+}
+.nnn-thumb-play{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  opacity:0;transition:.28s;
+}
+.nnn-vcard:hover .nnn-thumb-play{opacity:1}
+.nnn-thumb-play span{
+  width:54px;height:54px;border-radius:50%;background:rgba(255,255,255,.94);
+  display:flex;align-items:center;justify-content:center;
+  color:var(--nnn-violet-deep);font-size:19px;padding-left:4px;
+  box-shadow:0 12px 26px -10px rgba(0,0,0,.5);
+}
+.nnn-thumb-dur{
+  position:absolute;right:12px;bottom:12px;font-size:11.5px;font-weight:600;
+  color:#fff;background:rgba(28,23,48,.72);border-radius:6px;padding:2px 8px;
+}
+.nnn-vcard-body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:9px;flex:1}
+.nnn-vcard-title{font-size:16px;font-weight:700;line-height:1.45;letter-spacing:-.005em}
+.nnn-vcard-excerpt{font-size:13.2px;color:var(--nnn-muted);line-height:1.65}
+.nnn-vcard-foot{
+  margin-top:auto;padding-top:12px;border-top:1px dashed var(--nnn-line);
+  display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+}
+.nnn-author{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--nnn-ink-soft);font-weight:500}
+.nnn-avatar{
+  width:28px;height:28px;border-radius:50%;flex:none;
+  display:flex;align-items:center;justify-content:center;
+  color:#fff;font-size:12px;font-weight:700;
+}
+.nnn-avatar-lg{width:48px;height:48px;font-size:17px;border-radius:16px}
+.nnn-stat-group{margin-left:auto;display:flex;align-items:center;gap:12px;font-size:12px;color:var(--nnn-muted)}
+.nnn-icon-btn{
+  display:inline-flex;align-items:center;gap:5px;font-size:12.5px;font-weight:600;
+  color:var(--nnn-muted);transition:.2s;border-radius:8px;padding:4px 7px;
+}
+.nnn-icon-btn:hover{background:#f1eefc;color:var(--nnn-violet-deep)}
+.nnn-icon-btn.is-liked{color:var(--nnn-rose)}
+.nnn-icon-btn.is-saved{color:var(--nnn-gold)}
+.nnn-icon-btn.is-liked svg,.nnn-icon-btn.is-saved svg{fill:currentColor}
+.nnn-focus-side{display:grid;gap:18px}
+.nnn-vcard-sm{flex-direction:row;align-items:stretch}
+.nnn-vcard-sm .nnn-thumb{width:44%;flex:none}
+.nnn-vcard-sm .nnn-thumb img{height:100%;aspect-ratio:auto;min-height:130px}
+.nnn-vcard-sm .nnn-vcard-body{padding:15px 16px}
+.nnn-vcard-sm .nnn-vcard-title{font-size:14.5px}
+
+/* ============ 视频流 ============ */
+.nnn-filter-row{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:28px}
+.nnn-filter{
+  font-size:13px;font-weight:600;color:var(--nnn-ink-soft);
+  background:#fff;border:1px solid var(--nnn-line);border-radius:999px;padding:7px 16px;transition:.22s;
+}
+.nnn-filter:hover{border-color:var(--nnn-violet)}
+.nnn-filter.is-on{background:var(--nnn-violet-deep);border-color:var(--nnn-violet-deep);color:#fff}
+.nnn-grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+
+/* ============ 专题 ============ */
+.nnn-topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.nnn-topic{
+  position:relative;border-radius:20px;overflow:hidden;min-height:260px;
+  display:flex;flex-direction:column;justify-content:flex-end;
+  padding:22px;color:#fff;transition:.3s;border:1px solid rgba(255,255,255,.14);
+}
+.nnn-topic:hover{transform:translateY(-5px)}
+.nnn-topic-bg{position:absolute;inset:0;z-index:0}
+.nnn-topic-bg img{width:100%;height:100%;object-fit:cover}
+.nnn-topic-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(28,23,48,.15),rgba(28,23,48,.88))}
+.nnn-topic>*{position:relative;z-index:1}
+.nnn-topic-status{
+  align-self:flex-start;font-size:11px;font-weight:700;letter-spacing:.06em;
+  background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.4);
+  border-radius:999px;padding:3px 10px;margin-bottom:12px;
+}
+.nnn-topic h3{font-size:18.5px;margin-bottom:8px}
+.nnn-topic p{font-size:13px;opacity:.86;line-height:1.6}
+
+/* ============ 创作者 ============ */
+.nnn-creator-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.nnn-creator{
+  background:#fff;border:1px solid var(--nnn-line);border-radius:20px;
+  padding:24px 20px;text-align:center;transition:.28s;
+}
+.nnn-creator:hover{transform:translateY(-5px);box-shadow:var(--nnn-shadow);border-color:#d9cfff}
+.nnn-creator .nnn-avatar-lg{margin:0 auto 14px}
+.nnn-creator h3{font-size:16px;margin-bottom:5px}
+.nnn-creator-field{font-size:12px;font-weight:600;color:var(--nnn-violet-deep);margin-bottom:10px}
+.nnn-creator p{font-size:12.8px;color:var(--nnn-muted);line-height:1.7;min-height:66px}
+.nnn-creator-stats{display:flex;justify-content:center;gap:16px;margin-top:14px;padding-top:14px;border-top:1px dashed var(--nnn-line);font-size:11.5px;color:var(--nnn-muted)}
+.nnn-creator-stats b{display:block;font-size:15px;color:var(--nnn-ink);font-weight:800}
+
+/* ============ 作品墙 ============ */
+.nnn-wall{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:150px;gap:14px}
+.nnn-wall-item{
+  position:relative;border-radius:14px;overflow:hidden;background:#e9e5f7;cursor:pointer;
+}
+.nnn-wall-item img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.nnn-wall-item:hover img{transform:scale(1.06)}
+.nnn-wall-item::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,transparent 55%,rgba(28,23,48,.65));
+}
+.nnn-wall-cap{
+  position:absolute;left:12px;right:12px;bottom:10px;z-index:2;
+  color:#fff;font-size:12px;font-weight:600;
+}
+.nnn-wall-big{grid-column:span 2;grid-row:span 2}
+.nnn-wall-wide{grid-column:span 2}
+.nnn-wall-tall{grid-row:span 2}
+
+/* ============ 评价 ============ */
+.nnn-quote-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.nnn-quote{
+  background:#fff;border:1px solid var(--nnn-line);border-radius:18px;
+  padding:22px;display:flex;flex-direction:column;gap:14px;
+}
+.nnn-quote-text{font-size:14px;color:var(--nnn-ink-soft);line-height:1.78}
+.nnn-quote-foot{display:flex;align-items:center;gap:10px;margin-top:auto}
+.nnn-quote-name{font-size:13px;font-weight:700}
+.nnn-quote-role{font-size:11.5px;color:var(--nnn-muted)}
+.nnn-stars{display:flex;gap:2px;color:var(--nnn-gold);font-size:13px}
+
+/* ============ 动态与榜单 ============ */
+.nnn-split{display:grid;grid-template-columns:1.15fr .85fr;gap:26px;align-items:start}
+.nnn-news{background:#fff;border:1px solid var(--nnn-line);border-radius:20px;padding:8px 24px}
+.nnn-news-item{
+  display:flex;gap:16px;padding:18px 0;border-bottom:1px dashed var(--nnn-line);align-items:flex-start;
+}
+.nnn-news-item:last-child{border-bottom:none}
+.nnn-news-date{
+  flex:none;font-size:12px;font-weight:700;color:var(--nnn-violet-deep);
+  background:#efeaff;border-radius:9px;padding:7px 10px;line-height:1.3;text-align:center;
+}
+.nnn-news-date span{display:block;font-size:10px;color:var(--nnn-muted);font-weight:500}
+.nnn-news-item h3{font-size:14.6px;margin-bottom:4px}
+.nnn-news-item p{font-size:12.8px;color:var(--nnn-muted);line-height:1.65}
+.nnn-rank{background:#fff;border:1px solid var(--nnn-line);border-radius:20px;padding:22px 24px}
+.nnn-rank h3{font-size:16px;margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.nnn-rank h3 em{
+  font-style:normal;font-size:11px;background:var(--nnn-rose);color:#fff;
+  border-radius:6px;padding:1px 7px;font-weight:700;
+}
+.nnn-rank-item{display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px dashed var(--nnn-line)}
+.nnn-rank-item:last-child{border-bottom:none}
+.nnn-rank-no{
+  width:24px;height:24px;border-radius:8px;flex:none;
+  display:flex;align-items:center;justify-content:center;
+  font-size:12px;font-weight:800;background:#f1eefc;color:var(--nnn-violet-deep);
+}
+.nnn-rank-item:nth-child(2) .nnn-rank-no{background:var(--nnn-gold);color:#fff}
+.nnn-rank-item:nth-child(3) .nnn-rank-no{background:#c9c2dd;color:#fff}
+.nnn-rank-title{font-size:13.5px;font-weight:600;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nnn-rank-heat{font-size:11.5px;color:var(--nnn-rose);font-weight:700;flex:none}
+
+/* ============ FAQ ============ */
+.nnn-faq{display:grid;gap:12px;max-width:920px}
+.nnn-faq details{
+  background:#fff;border:1px solid var(--nnn-line);border-radius:14px;
+  padding:0 20px;transition:.22s;
+}
+.nnn-faq details[open]{border-color:#d9cfff;box-shadow:var(--nnn-shadow)}
+.nnn-faq summary{
+  list-style:none;cursor:pointer;padding:17px 0;font-size:14.5px;font-weight:600;
+  display:flex;align-items:center;justify-content:space-between;gap:14px;
+}
+.nnn-faq summary::-webkit-details-marker{display:none}
+.nnn-faq summary::after{
+  content:"+";font-size:19px;font-weight:400;color:var(--nnn-violet-deep);
+  transition:.24s;flex:none;
+}
+.nnn-faq details[open] summary::after{transform:rotate(45deg)}
+.nnn-faq p{font-size:13.5px;color:var(--nnn-muted);padding-bottom:18px;line-height:1.8}
+
+/* ============ 联系 ============ */
+.nnn-cta{
+  background:linear-gradient(130deg,#2a2145,#3c2a6e 46%,#7c5cff);
+  border-radius:26px;padding:46px 44px;color:#fff;position:relative;overflow:hidden;
+}
+.nnn-cta::after{
+  content:"";position:absolute;right:-70px;top:-80px;width:320px;height:320px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,111,156,.5),transparent 66%);
+}
+.nnn-cta-grid{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.nnn-cta h2{font-size:28px;line-height:1.35;margin-bottom:14px}
+.nnn-cta p{font-size:14px;opacity:.85;line-height:1.8}
+.nnn-cta-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.nnn-cta .nnn-btn-primary{background:#fff;color:var(--nnn-violet-deep)}
+.nnn-cta .nnn-btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.42)}
+.nnn-cta .nnn-btn-ghost:hover{background:rgba(255,255,255,.12)}
+.nnn-cta-info{display:grid;gap:14px}
+.nnn-cta-info-item{
+  background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.18);
+  border-radius:14px;padding:14px 18px;font-size:13px;backdrop-filter:blur(6px);
+}
+.nnn-cta-info-item b{display:block;font-size:11.5px;letter-spacing:.12em;opacity:.7;margin-bottom:4px;font-weight:600}
+
+/* ============ 页脚 ============ */
+.nnn-footer{background:#1c1730;color:#c8c2e0;padding:56px 0 26px}
+.nnn-footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:36px}
+.nnn-footer h4{font-size:13.5px;color:#fff;margin-bottom:16px;letter-spacing:.04em}
+.nnn-footer p{font-size:12.8px;line-height:1.85;color:#a49dc2}
+.nnn-footer li{margin-bottom:9px;font-size:12.8px}
+.nnn-footer a{color:#a49dc2;transition:.2s}
+.nnn-footer a:hover{color:#fff}
+.nnn-footer-brand{display:flex;align-items:center;gap:11px;margin-bottom:16px}
+.nnn-footer-bottom{
+  margin-top:38px;padding-top:22px;border-top:1px solid rgba(255,255,255,.1);
+  display:flex;flex-wrap:wrap;gap:12px 22px;font-size:12px;color:#8c85ac;
+}
+.nnn-footer-bottom span:last-child{margin-left:auto}
+
+/* ============ 悬浮/提示 ============ */
+.nnn-to-top{
+  position:fixed;right:24px;bottom:28px;z-index:110;
+  width:46px;height:46px;border-radius:14px;
+  background:linear-gradient(135deg,var(--nnn-violet),var(--nnn-rose));
+  color:#fff;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 14px 30px -12px rgba(124,92,255,.9);
+  opacity:0;pointer-events:none;transition:.3s;
+}
+.nnn-to-top.is-show{opacity:1;pointer-events:auto}
+.nnn-toast{
+  position:fixed;left:50%;bottom:38px;transform:translate(-50%,18px);
+  background:#1c1730;color:#fff;font-size:13px;font-weight:500;
+  border-radius:12px;padding:11px 20px;z-index:200;
+  opacity:0;pointer-events:none;transition:.3s;box-shadow:0 18px 40px -18px rgba(0,0,0,.7);
+}
+.nnn-toast.is-show{opacity:1;transform:translate(-50%,0)}
+
+/* ============ 弹窗 ============ */
+.nnn-modal{
+  position:fixed;inset:0;z-index:300;display:none;
+  align-items:center;justify-content:center;padding:22px;
+  background:rgba(20,16,38,.6);backdrop-filter:blur(6px);
+}
+.nnn-modal.is-open{display:flex}
+.nnn-modal-card{
+  background:#fff;border-radius:22px;max-width:440px;width:100%;
+  padding:28px;box-shadow:0 40px 80px -30px rgba(0,0,0,.6);animation:nnnPop .26s ease;
+}
+@keyframes nnnPop{from{transform:translateY(14px) scale(.97);opacity:0}to{transform:none;opacity:1}}
+.nnn-modal-card h3{font-size:18px;margin-bottom:8px}
+.nnn-modal-card p{font-size:13.5px;color:var(--nnn-muted);line-height:1.75;margin-bottom:18px}
+.nnn-modal-card textarea{
+  width:100%;min-height:110px;border:1px solid var(--nnn-line);border-radius:12px;
+  padding:12px 14px;font-family:inherit;font-size:13.5px;resize:vertical;outline:none;color:var(--nnn-ink);
+}
+.nnn-modal-card textarea:focus{border-color:var(--nnn-violet);box-shadow:0 0 0 4px rgba(124,92,255,.1)}
+.nnn-modal-actions{display:flex;gap:10px;margin-top:18px}
+.nnn-modal-actions .nnn-btn{flex:1}
+
+/* ============ 响应式 ============ */
+@media (max-width:1080px){
+  .nnn-hero-inner{grid-template-columns:1fr;gap:40px}
+  .nnn-hero-visual{max-width:640px}
+  .nnn-about{grid-template-columns:1fr}
+  .nnn-about-card{position:static}
+  .nnn-focus-grid{grid-template-columns:1fr}
+  .nnn-creator-grid{grid-template-columns:repeat(2,1fr)}
+  .nnn-topic-grid{grid-template-columns:repeat(2,1fr)}
+  .nnn-split{grid-template-columns:1fr}
+  .nnn-cta-grid{grid-template-columns:1fr}
+  .nnn-footer-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:860px){
+  html{scroll-padding-top:120px}
+  .nnn-nav{
+    display:none;position:absolute;left:0;right:0;top:100%;
+    background:#fff;border-bottom:1px solid var(--nnn-line);
+    flex-direction:column;align-items:stretch;gap:2px;padding:12px 18px 18px;
+    box-shadow:0 24px 40px -26px rgba(58,38,140,.5);
+  }
+  .nnn-nav.is-open{display:flex}
+  .nnn-nav a{padding:11px 14px}
+  .nnn-header-inner{position:relative;flex-wrap:wrap}
+  .nnn-nav-toggle{display:inline-flex}
+  .nnn-head-tools{order:3;width:100%;margin-left:0;margin-top:10px}
+  .nnn-search{width:100%}
+  .nnn-head-tools>.nnn-btn{display:none}
+  .nnn-grid-3{grid-template-columns:repeat(2,1fr)}
+  .nnn-quote-grid{grid-template-columns:1fr}
+  .nnn-wall{grid-template-columns:repeat(2,1fr);grid-auto-rows:140px}
+  .nnn-cta{padding:32px 24px}
+  .nnn-sec-title{font-size:25px}
+  .nnn-section{padding:56px 0}
+}
+@media (max-width:620px){
+  .nnn-announce-inner{font-size:12px;padding:8px 16px}
+  .nnn-announce-link{margin-left:0}
+  .nnn-grid-3,.nnn-topic-grid,.nnn-creator-grid{grid-template-columns:1fr}
+  .nnn-vcard-sm{flex-direction:column}
+  .nnn-vcard-sm .nnn-thumb{width:100%}
+  .nnn-vcard-sm .nnn-thumb img{aspect-ratio:16/9;min-height:0}
+  .nnn-hero-stats{grid-template-columns:1fr;gap:12px;text-align:left}
+  .nnn-hero-stat{display:flex;align-items:baseline;gap:10px}
+  .nnn-hero-stat b{font-size:21px}
+  .nnn-footer-grid{grid-template-columns:1fr}
+  .nnn-footer-bottom span:last-child{margin-left:0}
+  .nnn-hero-float{display:none}
+  .nnn-hero-float-sm{left:0;bottom:-10px}
+  .nnn-wall{grid-auto-rows:120px}
+  .nnn-sec-title{font-size:22px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- ===== 吸顶：公告条 + 页头 ===== -->
+<div class="nnn-sticky-shell">
+  <div class="nnn-announce">
+    <div class="nnn-announce-inner">
+      <span class="nnn-announce-badge">官方发布</span>
+      <span class="nnn-announce-text"><strong>「同频」专题第二季</strong>已上线 6 支原创短片，收录 12 位创作者的城市情感记录</span>
+      <a class="nnn-announce-link" href="#nnn-topics">查看专题 →</a>
+    </div>
+  </div>
+  <header class="nnn-header">
+    <div class="nnn-header-inner">
+      <a class="nnn-brand" href="#nnn-hero">
+        <span class="nnn-brand-mark">男</span>
+        <span>
+          <span class="nnn-brand-word">男男</span>
+          <span class="nnn-brand-sub">影像社区</span>
+        </span>
+      </a>
+      <nav class="nnn-nav" id="nnnNav">
+        <a href="#nnn-hero" class="is-active">首页</a>
+        <a href="#nnn-focus">焦点内容</a>
+        <a href="#nnn-feed">热门视频</a>
+        <a href="#nnn-topics">专题企划</a>
+        <a href="#nnn-creators">创作者</a>
+        <a href="#nnn-news">企业动态</a>
+        <a href="#nnn-faq">帮助</a>
+      </nav>
+      <div class="nnn-head-tools">
+        <label class="nnn-search">
+          <input type="text" id="nnnSearchInput" placeholder="搜索创作者、专题或视频主题" aria-label="站内搜索">
+          <button class="nnn-search-btn" id="nnnSearchBtn" aria-label="搜索">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+          </button>
+        </label>
+        <button class="nnn-btn nnn-btn-primary" id="nnnSubmitBtn">我要投稿</button>
+        <button class="nnn-nav-toggle" id="nnnNavToggle" aria-label="展开导航" aria-expanded="false">☰</button>
+      </div>
+    </div>
+    <div class="nnn-search-hint" id="nnnSearchHint"></div>
+  </header>
+</div>
+
+<main>
+
+<!-- ===== 首屏 ===== -->
+<section class="nnn-hero" id="nnn-hero">
+  <div class="nnn-hero-inner">
+    <div>
+      <div class="nnn-hero-tagline"><i></i>男男 官方网站 · 多元情感影像品牌</div>
+      <h1><span>男男</span>，让真实的情感被看见</h1>
+      <p class="nnn-hero-lead">
+        作为深耕多元情感表达领域的视频品牌，男男官方网站以原创短片、人物访谈与城市记录为核心，
+        搭建创作者与企业共建的高品质内容社区。我们相信每一种关系都值得被认真讲述，
+        每一段真实的陪伴都值得被摄像机记住。
+      </p>
+      <div class="nnn-hero-actions">
+        <a class="nnn-btn nnn-btn-primary" href="#nnn-focus">进入焦点内容</a>
+        <a class="nnn-btn nnn-btn-ghost" href="#nnn-creators">认识创作者</a>
+        <a class="nnn-btn nnn-btn-soft" href="#nnn-feed">浏览热门视频</a>
+      </div>
+      <div class="nnn-hero-stats">
+        <div class="nnn-hero-stat"><b>2,860+</b><span>原创视频内容</span></div>
+        <div class="nnn-hero-stat"><b>128 位</b><span>签约与联合创作者</span></div>
+        <div class="nnn-hero-stat"><b>96.4%</b><span>社区正向口碑</span></div>
+      </div>
+    </div>
+    <div class="nnn-hero-visual">
+      <div class="nnn-hero-cover">
+        <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'%3E%3Cdefs%3E%3ClinearGradient id='sky' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232a1e4d'/%3E%3Cstop offset='.55' stop-color='%23543a8c'/%3E%3Cstop offset='1' stop-color='%23b06a94'/%3E%3C/linearGradient%3E%3ClinearGradient id='glow' x1='0' y1='1' x2='0' y2='0'%3E%3Cstop offset='0' stop-color='%23ff9dbb' stop-opacity='.9'/%3E%3Cstop offset='1' stop-color='%23ff9dbb' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='500' fill='url(%23sky)'/%3E%3Cellipse cx='400' cy='500' rx='460' ry='230' fill='url(%23glow)'/%3E%3Ccircle cx='628' cy='118' r='54' fill='%23ffe6f0' opacity='.92'/%3E%3Ccircle cx='640' cy='108' r='54' fill='%23543a8c' opacity='.55'/%3E%3Cpath d='M0 372l128-62 96 44 118-78 122 66 106-50 130 74v134H0z' fill='%231d1533' opacity='.86'/%3E%3Cpath d='M0 412l150-48 120 40 140-62 130 56 130-40 130 62v80H0z' fill='%23140e26'/%3E%3Cg fill='%23ffd9e6'%3E%3Ccircle cx='150' cy='96' r='2.4'/%3E%3Ccircle cx='236' cy='62' r='1.8'/%3E%3Ccircle cx='318' cy='112' r='2'/%3E%3Ccircle cx='452' cy='70' r='1.6'/%3E%3Ccircle cx='712' cy='176' r='2.2'/%3E%3Ccircle cx='94' cy='160' r='1.8'/%3E%3C/g%3E%3Cg stroke='%23ff9dbb' stroke-width='3' fill='none' opacity='.9'%3E%3Ccircle cx='400' cy='286' r='42'/%3E%3Cpath d='M386 286l11 12 20-25' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cg font-family='sans-serif'%3E%3Ctext x='64' y='298' fill='%23ffffff' font-size='30' font-weight='bold'%3E同频%3C/text%3E%3Ctext x='64' y='332' fill='%23e5d6ff' font-size='15'%3E真实关系纪实企划%3C/text%3E%3C/g%3E%3C/svg%3E" alt="男男品牌主视觉：夜色渐层下的同频专题纪实封面">
+        <div class="nnn-hero-cover-meta"><span class="nnn-live-dot"></span>同频 · 第二季 正在更新</div>
+      </div>
+      <div class="nnn-hero-float">
+        <b>本周新增</b>
+        14 支原创短片
+      </div>
+      <div class="nnn-hero-float-sm">社区投稿通道开放中</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 关键词解析 ===== -->
+<section class="nnn-section" id="nnn-about">
+  <div class="nnn-wrap">
+    <div class="nnn-sec-head">
+      <div class="nnn-eyebrow">品牌解析</div>
+      <h2 class="nnn-sec-title">什么是男男：一个关于真实与陪伴的内容品牌</h2>
+      <p class="nnn-sec-desc">从关键词出发，理解这个品牌为什么存在，以及它试图用影像回答什么问题。</p>
+    </div>
+    <div class="nnn-about">
+      <aside class="nnn-about-card">
+        <div class="nnn-about-badge">● 官方内容生态说明</div>
+        <h3>品牌速览</h3>
+        <p>名称：男男（影像社区）</p>
+        <p>成立：2019 年，持续运营第 8 年</p>
+        <p>方向：多元情感、城市记录、人物访谈</p>
+        <p>规模：128 位创作者，2860+ 支原创内容</p>
+        <p>定位：值得信赖的垂直领域影像内容平台</p>
+        <a class="nnn-btn nnn-btn-primary" href="#nnn-cta" style="width:100%;margin-top:8px">合作与联系</a>
+      </aside>
+      <div class="nnn-about-body">
+        <p>「男男」这两个字，在很长一段时间里被当作一个需要被小声说出的词。它指代一种关系，也指代一种身份；它出现在私人对话里，却很少出现在公开的影像叙事中。男男官方网站的起点，正是这样一个朴素的判断：当一种真实存在的生活缺少被认真记录的机会，它就会被误解、被简化，甚至被抹平。因此，我们把品牌定义为一个专注真实情感影像的内容平台，用专业的方法、正版的内容授权与持续的运营能力，为这些故事提供一个稳定、体面、被尊重的落点。</p>
+        <div class="nnn-about-quote">我们不做猎奇的镜头，也不做被规训的标本。我们更愿意花三个月跟拍一对相处十年的伴侣，记录他们如何在厨房里分配洗碗这件事。</div>
+        <h3>关键词的三层理解</h3>
+        <p>第一层是<strong>关系层面</strong>。男男首先指向一种伴侣关系，它和任何一段长期关系一样，包含初见、磨合、柴米油盐、共同成长，也包含分歧、疲惫与和解。平台的内容因此天然具备叙事张力：既有糖分，也有重量。我们拒绝把关系简化成单一的浪漫想象，而是用访谈、生活记录与城市行走去呈现关系的完整生命周期。</p>
+        <p>第二层是<strong>身份层面</strong>。男男也指向个体的自我认同。很多创作者告诉我们，他们的创作起点不是表达欲，而是「我终于可以讲自己的故事」。平台因此设置了个人叙事单元与创作者档案，让每一个愿意出镜的人被当作作者而非素材。我们坚持出镜同意书、内容终审权与隐私保护流程，这是企业级内容生态的底线，也是口碑的基础。</p>
+        <p>第三层是<strong>社区层面</strong>。男男官方网站从上线第一天起就设有创作者共建机制：月度选题会、联合企划、行业观察报告与新人扶持计划。我们把平台理解为一片需要长期养护的土壤，而不是一个流量池。8 年间，128 位创作者在这里完成了从记录者到作者的身份转变，这正是我们所说的内容生态。</p>
+        <h3>我们如何工作</h3>
+        <p>内容生产上，我们采用「编辑部 + 创作者」的双轨机制。编辑部负责专题企划的方向、专业拍摄支持与审校流程，创作者保留表达主导权。每一支上线内容都经过事实核对、隐私确认与版权审查三道流程，确保正版与高清是标准配置而非宣传口径。品牌合作方面，我们只接受与品牌调性一致的长期伙伴，不为短期预算牺牲内容判断力。</p>
+        <p>技术层面，平台提供稳定播放、创作者主页、专题合集与内容归档服务，让优质内容不随时间流失而消失。我们相信，一个真正值得信赖的内容社区，衡量标准不是某条内容爆了多久，而是五年之后还有没有人愿意重新打开它。这也是男男持续运营的核心命题：做长跑者，不做短跑者。</p>
+        <h3>面向未来</h3>
+        <p>未来三年，男男将把重心放在三个方向：一是扩大原创比例，把自制专题从每年 6 个提升到 15 个；二是建设创作者成长体系，包含拍摄培训、剪辑工作坊与年度比赛；三是推动行业观察内容的公开化，与社会机构合作发布年度情感影像报告。我们希望通过这些工作，让男男不仅是一个品牌名，更是一种被社会理解的表达方式。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 焦点视频 ===== -->
+<section class="nnn-section nnn-section-tint" id="nnn-focus">
+  <div class="nnn-wrap">
+    <div class="nnn-sec-head">
+      <div class="nnn-eyebrow">焦点内容</div>
+      <h2 class="nnn-sec-title">本周品牌编辑部重点推荐</h2>
+      <p class="nnn-sec-desc">由官方编辑部与联合创作者共同选出的 6 支精品内容，涵盖纪实、访谈与生活记录。</p>
+    </div>
+
+    <div class="nnn-focus-grid">
+      <article class="nnn-vcard">
+        <div class="nnn-thumb">
+          <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f6e8ff'/%3E%3Cstop offset='1' stop-color='%23c9b6ff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23a)'/%3E%3Ccircle cx='626' cy='118' r='96' fill='%23ff9dbb' opacity='.55'/%3E%3Crect x='72' y='196' width='320' height='188' rx='18' fill='%23ffffff' opacity='.82'/%3E%3Crect x='96' y='226' width='180' height='16' rx='8' fill='%237c5cff'/%3E%3Crect x='96' y='262' width='256' height='11' rx='5' fill='%23c2b4ea'/%3E%3Crect x='96' y='286' width='212' height='11' rx='5' fill='%23c2b4ea'/%3E%3Crect x='96' y='322' width='112' height='34' rx='17' fill='%23ff6f9c'/%3E%3Cpath d='M420 336c58-44 92-92 140-88 44 4 62 46 40 78-24 34-96 40-180 10z' fill='%235a3ee0' opacity='.5'/%3E%3C/svg%3E" alt="焦点视频封面：厨房里的十年，一对伴侣的日常纪实">
+          <div class="nnn-thumb-shade"></div>
+          <span class="nnn-thumb-tag">官方自制</span>
+          <div class="nnn-thumb-play"><span>▶</span></div>
+          <span class="nnn-thumb-dur">18:42</span>
+        </div>
+        <div class="nnn-vcard-body">
+          <h3 class="nnn-vcard-title">厨房里的十年：一对伴侣如何分配洗碗这件小事</h3>
+          <p class="nnn-vcard-excerpt">跟拍三个月，记录一段十年关系里最琐碎也最真实的协作方式。从谁先起床到谁最后关灯，镜头不回避疲惫，也保留了笑场。</p>
+          <div class="nnn-vcard-foot">
+            <div class="nnn-author">
+              <span class="nnn-avatar" style="background:linear-gradient(135deg,#7c5cff,#ff6f9c)">编</span>
+              编辑部 · 纪实组
+            </div>
+            <div class="nnn-stat-group">
+              <button class="nnn-icon-btn nnn-like" aria-label="点赞">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.6-7-9.4A4.1 4.1 0 0 1 12 7a4.1 4.1 0 0 1 7 3.6C19 15.4 12 20 12 20z"/></svg>
+                <span>3.2万</span>
+              </button>
+              <button class="nnn-icon-btn nnn-save" aria-label="收藏">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v16l-6-4-6 4z"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <div class="nnn-focus-side">
+        <article class="nnn-vcard nnn-vcard-sm">
+          <div class="nnn-thumb">
+            <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 320'%3E%3Cdefs%3E%3ClinearGradient id='b' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230e1e33'/%3E%3Cstop offset='1' stop-color='%232a4a7a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='320' fill='url(%23b)'/%3E%3Crect x='0' y='216' width='480' height='104' fill='%23091220'/%3E%3Cg fill='%233ec6b4'%3E%3Crect x='48' y='130' width='18' height='86' rx='6'/%3E%3Crect x='86' y='102' width='18' height='114' rx='6'/%3E%3Crect x='124' y='150' width='18' height='66' rx='6'/%3E%3Crect x='162' y='118' width='18' height='98' rx='6'/%3E%3C/g%3E%3Ccircle cx='352' cy='106' r='44' fill='%23f5b544' opacity='.85'/%3E%3Crect x='216' y='188' width='216' height='12' rx='6' fill='%233ec6b4' opacity='.5'/%3E%3C/svg%3E" alt="焦点视频封面：夜班电台，凌晨两点的城市情感热线">
+            <div class="nnn-thumb-shade"></div>
+            <span class="nnn-thumb-tag">人物访谈</span>
+            <span class="nnn-thumb-dur">26:08</span>
+          </div>
+          <div class="nnn-vcard-body">
+            <h3 class="nnn-vcard-title">夜班电台：凌晨两点的城市情感热线</h3>
+            <p class="nnn-vcard-excerpt">跟访一位深夜主播，听他记录陌生人的告白与告别。</p>
+            <div class="nnn-vcard-foot">
+              <div class="nnn-author"><span class="nnn-avatar" style="background:#3ec6b4">沈</span>沈子夜</div>
+              <div class="nnn-stat-group">
+                <button class="nnn-icon-btn nnn-like" aria-label="点赞">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.6-7-9.4A4.1 4.1 0 0 1 12 7a4.1 4.1 0 0 1 7 3.6C19 15.4 12 20 12 20z"/></svg>
+                  <span>1.8万</span>
+                </button>
+                <button class="nnn-icon-btn nnn-save" aria-label="收藏">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v16l-6-4-6 4z"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="nnn-vcard nnn-vcard-sm">
+          <div class="nnn-thumb">
+            <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 320'%3E%3Cdefs%3E%3ClinearGradient id='c' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23fff2d6'/%3E%3Cstop offset='1' stop-color='%23f5b544'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='320' fill='url(%23c)'/%3E%3Ccircle cx='118' cy='104' r='58' fill='%23ffffff' opacity='.6'/%3E%3Cpath d='M0 240c86-58 152-26 218 4s156-14 262-58v134H0z' fill='%23b06a94' opacity='.55'/%3E%3Cpath d='M0 274c94-38 168 6 240 24s144-8 240-32v54H0z' fill='%237c5cff' opacity='.5'/%3E%3Crect x='300' y='72' width='118' height='76' rx='14' fill='%23ffffff' opacity='.72'/%3E%3Crect x='320' y='96' width='78' height='9' rx='4' fill='%23b06a94'/%3E%3Crect x='320' y='116' width='54' height='9' rx='4' fill='%23d9c2b0'/%3E%3C/svg%3E" alt="焦点视频封面：把出租屋改成两个人的家，14 平方米的收纳实录">
+            <div class="nnn-thumb-shade"></div>
+            <span class="nnn-thumb-tag">生活记录</span>
+            <span class="nnn-thumb-dur">12:36</span>
+          </div>
+          <div class="nnn-vcard-body">
+            <h3 class="nnn-vcard-title">把出租屋改成两个人的家：14 平方米收纳实录</h3>
+            <p class="nnn-vcard-excerpt">预算 3800 元，从动线规划到灯光改造的完整过程。</p>
+            <div class="nnn-vcard-foot">
+              <div class="nnn-author"><span class="nnn-avatar" style="background:#f5b544">阿</span>阿栗与小鱼</div>
+              <div class="nnn-stat-group">
+                <button class="nnn-icon-btn nnn-like" aria-label="点赞">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.6-7-9.4A4.1 4.1 0 0 1 12 7a4.1 4.1 0 0 1 7 3.6C19 15.4 12 20 12 20z"/></svg>
+                  <span>9,842</span>
+                </button>
+                <button class="nnn-icon-btn nnn-save" aria-label="收藏">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v16l-6-4-6 4z"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="nnn-vcard nnn-vcard-sm">
+          <div class="nnn-thumb">
+            <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 320'%3E%3Cdefs%3E%3ClinearGradient id='d' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23121c2c'/%3E%3Cstop offset='1' stop-color='%233a2a6e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='320' fill='url(%23d)'/%3E%3Cg stroke='%23ff6f9c' stroke-width='2' opacity='.75'%3E%3Cpath d='M40 250h140M40 280h90M300 74h140M360 44h80'/%3E%3C/g%3E%3Ccircle cx='240' cy='160' r='66' fill='none' stroke='%237c5cff' stroke-width='8' opacity='.8'/%3E%3Cpath d='M218 160l16 18 30-38' fill='none' stroke='%233ec6b4' stroke-width='8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" alt="焦点视频封面：出柜之后的第一年，五个家庭的对话现场">
+            <div class="nnn-thumb-shade"></div>
+            <span class="nnn-thumb-tag">深度企划</span>
+            <span class="nnn-thumb-dur">34:15</span>
+          </div>
+          <div class="nnn-vcard-body">
+            <h3 class="nnn-vcard-title">出柜之后的第一年：五个家庭的对话现场</h3>
+            <p class="nnn-vcard-excerpt">我们邀请了五个家庭坐下来，把最难说的话讲完。</p>
+            <div class="nnn-vcard-foot">
+              <div class="nnn-author"><span class="nnn-avatar" style="background:#7c5cff">周</span>周以宁</div>
+              <div class="nnn-stat-group">
+                <button class="nnn-icon-btn nnn-like" aria-label="点赞">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.6-7-9.4A4.1 4.1 0 0 1 12 7a4.1 4.1 0 0 1 7 3.6C19 15.4 12 20 12 20z"/></svg>
+                  <span>5.6万</span>
+                </button>
+                <button class="nnn-icon-btn nnn-save" aria-label="收藏">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v16l-6-4-6 4z"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 热门视频流 ===== -->
+<section class="nnn-section" id="nnn-feed">
+  <div class="nnn-wrap">
+    <div class="nnn-sec-head">
+      <div class="nnn-eyebrow">热门视频</div>
+      <h2 class="nnn-sec-title">社区精选：正在被反复观看的原创内容</h2>
+      <p class="nnn-sec-desc">来自平台创作者的真实记录、经验分享与城市探索，点击标签可快速筛选同类内容。</p>
+    </div>
+
+    <div class="nnn-filter-row" id="nnnFilterRow">
+      <button class="nnn-filter is-on" data-filter="all">全部</button>
+      <button class="nnn-filter" data-filter="纪实">纪实</button>
+      <button class="nnn-filter" data-filter="访谈">访谈</button>
+      <button class="nnn-filter" data-filter="生活">生活</button>
+      <button class="nnn-filter" data-filter="城市">城市</button>
+      <button class="nnn-filter" data-filter="创作">创作</button>
+    </div>
+
+    <div class="nnn-grid-3" id="nnnFeedGrid">
+      <article class="nnn-vcard" data-cat="城市">
+        <div class="nnn-thumb">
+          <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='e1' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23a8d8ff'/%3E%3Cstop offset='1' stop-color='%23f3f8ff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23e1)'/%3E%3Cg fill='%234a6f9e'%3E%3Crect x='60' y='150' width='70' height='150'/%3E%3Crect x='150' y='106' width='54' height='194'/%3E%3Crect x='222' y='176' width='86' height='124'/%3E%3Crect x='330' y='84' width='64' height='216'/%3E%3Crect x='412' y='140' width='92' height='160'/%3E%3Crect x='522' y='112' width='58' height='188'/%3E%3C/g%3E%3Crect y='300' width='640' height='60' fill='%23cfdcf0'/%3E%3Ccircle cx='512' cy='64' r='26' fill='%23ffd9a0'/%3E%3C/svg%3E" alt="视频封面：城市漫游指南，走过七条没有名字的小巷">
+          <div class="nnn-thumb-shade"></div>
+          <span class="nnn-thumb-tag">城市</span>
+          <span class="nnn-thumb-dur">15:20</span>
+        </div>
+        <div class="nnn-vcard-body">
+          <h3 class="nnn-vcard-title">城市漫游指南：走过七条没有名字的小巷</h3>
+          <p class="nnn-vcard-excerpt">从旧厂房到菜市场，一条偏离导航路线的散步记录，遇见三位在此生活四十年的居民。</p>
+          <div class="nnn-vcard-foot">
+            <div class="nnn-author"><span class="nnn-avatar" style="background:#4a6f9e">陆</span>陆行舟</div>
+            <div class="nnn-stat-group">
+              <button class="nnn-icon-btn nnn-like" aria-label="点赞"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.6-7-9.4A4.1 4.1 0 0 1 12 7a4.1 4.1 0 0 1 7 3.6C19 15.4 12 20 12 20z"/></svg><span>7,214</span></button>
+              <button class="nnn-icon-btn nnn-save" aria-label="收藏"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v16l-6-4-6 4z"/></svg></button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="nnn-vcard" data-cat="访谈">
+        <div class="nnn-thumb">
+          <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='e2' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ffe3ef'/%3E%3Cstop offset='1' stop-color='%23ffb3cd'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23e2)'/%3E%3Ccircle cx='196' cy='176' r='66' fill='%23ffffff' opacity='.85'/%3E%3Ccircle cx='196' cy='156' r='28' fill='%23b06a94'/%3E%3Cpath d='M148 222a48 40 0 0 1 96 0z' fill='%23b06a94'/%3E%3Ccircle cx='430' cy='196' r='58' fill='%23ffffff' opacity='.7'/%3E%3Ccircle cx='430' cy='180' r='24' fill='%237c5cff'/%3E%3Cpath d='M388 238a42 34 0 0 1 84 0z' fill='%237c5cff'/%3E%3Crect x='272' y='120' width='96' height='14' rx='7' fill='%23ffffff' opacity='.9'/%3E%3Crect x='292' y='148' width='56' height='11' rx='5' fill='%23ffffff' opacity='.7'/%3E%3C/svg%3E" alt="视频封面：两个男生的合租第七年，关于边界与默契的对话">
+          <div class="nnn-thumb-shade"></div>
+          <span class="nnn-thumb-tag">访谈</span>
+          <span class="nnn-thumb-dur">21:05</span>
+        </div>
+        <div class="nnn-vcard-body">
+          <h3 class="nnn-vcard-title">两个男生的合租第七年：关于边界与默契的对话</h3>
+          <p class="nnn-vcard-excerpt">他们把客厅当作会议室，每年开一次「关系年会」。这一次，我们全程记录。</p>
+          <div class="nnn-vcard-foot">
+            <div class="nnn-author"><span class="nnn-avatar" style="background:#b06a94">苏</span>苏木</div>
+            <div class="nnn-stat-group">
+              <button class="nnn-icon-btn nnn-like" aria-label="点赞"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.6-7-9.4A4.1 4.1 0 0 1 12 7a4.1 4.1 0 0 1 7 3.6C19 15.4 12 20 12 20z"/></svg><span>4,180</span></button>
+              <button class="nnn-icon-btn nnn-save" aria-label="收藏"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v16l-6-4-6 4z"/></svg></button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="nnn-vcard" data-cat="生活">
+        <div class="nnn-thumb">
+          <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='e3' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23e8ffe9'/%3E%3Cstop offset='1' stop-color='%2386d9a1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23e3)'/%3E%3Crect y='252' width='640' height='108' fill='%234f9e6e' opacity='.55'/%3E%3Cg fill='%23ffffff' opacity='.85'%3E%3Ccircle cx='140' cy='210' r='44'/%3E%3Ccircle cx='196' cy='196' r='28'/%3E%3Ccircle cx='452' cy='206' r='40'/%3E%3Ccircle cx='500' cy='190' r='24'/%3E%3C/g%3E%3Cpath d='M262 246c0-38 28-66 62-66s62 28 62 66z' fill='%232f7a52'/%3E%3Crect x='298' y='150' width='52' height='52' rx='26' fill='%23f5b544'/%3E%3C/svg%3E" alt="视频封面：两个人的早餐计划，一年 365 天不重样">
+          <div class="nnn-thumb-shade"></div>
+          <span class="nnn-thumb-tag">生活</span>
+          <span class="nnn-thumb-dur">10:48</span>
+        </div>
+        <div class="nnn-vcard-body">
+          <h3 class="nnn-vcard-title">两个人的早餐计划：一年 365 天不重样</h3>
+          <p class="nnn-vcard-excerpt">从周三开始记账，从周末开始备菜。一份能坚持一整年的双人早餐方法论。</p>
+          <div class="nnn-vcard-foot">
+            <div class="nnn-author"><span class="nnn-avatar" style="background:#2f7a52">林</span>林间食堂</div>
+            <div class="nnn-stat-group">
+              <button class="nnn-icon-btn nnn-like" aria-label="点赞"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.6-7-9.4A4.1 4.1 0 0 1 12 7a4.1 4.1 0 0 1 7 3.6C19 15.4 12 20 12 20z"/></svg><span>1.2万</span></button>
+              <button class="nnn-icon-btn nnn-save" aria-label="收藏"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v16l-6-4-6 4z"/></svg></button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="nnn-vcard" data-cat="创作">
+        <div class="nnn-thumb">
+          <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='e4' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23211634'/%3E%3Cstop offset='1' stop-color='%235a3ee0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23e4)'/%3E%3Cg stroke='%233ec6b4' stroke-width='3' fill='none' opacity='.8'%3E%3Cpath d='M80 280l90-120 90 70 90-110 90 90 100-70'/%3E%3C/g%3E%3Ccircle cx='170' cy='160' r='7' fill='%23ff6f9c'/%3E%3Ccircle cx='350' cy='120' r='7' fill='%23ff6f9c'/%3E%3Ccircle cx='530' cy='140' r='7' fill='%23ff6f9c'/%3E%3Crect x='78' y='64' width='186' height='12' rx='6' fill='%23ffffff' opacity='.75'/%3E%3Crect x='78' y='90' width='112' height='9' rx='4' fill='%23ffffff' opacity='.4'/%3E%3C/svg%3E" alt="视频封面：剪辑师的一天，从 42 小时素材到 8 分钟成片">
+          <div class="nnn-thumb-shade"></div>
+          <span class="nnn-thumb-tag">创作</span>
+          <span class="nnn-thumb-dur">24:30</span>
+        </div>
+        <div class="nnn-vcard-body">
+          <h3 class="nnn-vcard-title">剪辑师的一天：从 42 小时素材到 8 分钟成片</h3>
+          <p class="nnn-vcard-excerpt">完整公开一支纪实短片的后期流程，包括取舍逻辑、配乐选择与废片复盘。</p>
+          <div class="nnn-vcard-foot">
+            <div class="nnn-author"><span class="nnn-avatar" style="background:#5a3ee0">何</span>何以为剪</div>
+            <div class="nnn-stat-group">
+              <button class="nnn-icon-btn nnn-like" aria-label="点赞"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.6-7-9.4A4.1 4.1 0 0 1 12 7a4.1 4.1 0 0 1 7 3.6C19 15.4 12 20 12 20z"/></svg><span>3,908</span></button>
+              <button class="nnn-icon-btn nnn-save" aria-label="收藏"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v16l-6-4-6 4z"/></svg></button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="nnn-vcard" data-cat="纪实">
+        <div class="nnn-thumb">
+          <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='e5' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23f7f2e6'/%3E%3Cstop offset='1' stop-color='%23d9c7a8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23e5)'/%3E%3Crect y='270' width='640' height='90' fill='%238c7355' opacity='.6'/%3E%3Cg fill='%236b5236'%3E%3Crect x='92' y='112' width='16' height='164'/%3E%3Crect x='196' y='88' width='16' height='188'/%3E%3Crect x='300' y='132' width='16' height='144'/%3E%3C/g%3E%3Crect x='60' y='96' width='290' height='18' rx='4' fill='%236b5236'/%3E%3Ccircle cx='470' cy='164' r='58' fill='%23ffffff' opacity='.5'/%3E%3Crect x='436' y='206' width='68' height='72' rx='8' fill='%23b0906a'/%3E%3C/svg%3E" alt="视频封面：父亲第一次看我的短片，一场迟到十二年的放映">
+          <div class="nnn-thumb-shade"></div>
+          <span class="nnn-thumb-tag">纪实</span>
+          <span class="nnn-thumb-dur">19:56</span>
+        </div>
+        <div class="nnn-vcard-body">
+          <h3 class="nnn-vcard-title">父亲第一次看我的短片：一场迟到十二年的放映</h3>
+          <p class="nnn-vcard-excerpt">我把镜头对准自己，也把放映机搬回了老家。那天客厅里只有两张椅子。</p>
+          <div class="nnn-vcard-foot">
+            <div class="nnn-author"><span class="nnn-avatar" style="background:#8c7355">南</span>南野</div>
+            <div class="nnn-stat-group">
+              <button class="nnn-icon-btn nnn-like" aria-label="点赞"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.6-7-9.4A4.1 4.1 0 0 1 12 7a4.1 4.1 0 0 1 7 3.6C19 15.4 12 20 12 20z"/></svg><span>2.6万</span></button>
+              <button class="nnn-icon-btn nnn-save" aria-label="收藏"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v16l-6-4-6 4z"/></svg></button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="nnn-vcard" data-cat="生活">
+        <div class="nnn-thumb">
+          <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='e6' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f0ecff'/%3E%3Cstop offset='1' stop-color='%23b7a6ff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23e6)'/%3E%3Crect x='96' y='72' width='150' height='216' rx='12' fill='%23ffffff' opacity='.8'/%3E%3Crect x='126' y='108' width='90' height='10' rx='5' fill='%237c5cff'/%3E%3Crect x='126' y='134' width='64' height='9' rx='4' fill='%23c9bdf5'/%3E%3Crect x='126' y='158' width='80' height='9' rx='4' fill='%23c9bdf5'/%3E%3Crect x='126' y='196' width='54' height='26' rx='13' fill='%23ff6f9c'/%3E%3Crect x='330' y='112' width='216' height='140' rx='14' fill='%23ffffff' opacity='.65'/%3E%3Ccircle cx='438' cy='182' r='30' fill='%237c5cff' opacity='.7'/%3E%3Cpath d='M430 182l7 8 14-18' stroke='%23ffffff' stroke-width='5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" alt="视频封面：恋爱记账本，我们把情绪也写进了预算表">
+          <div class="nnn-thumb-shade"></div>
+          <span class="nnn-thumb-tag">生活</span>
+          <span class="nnn-thumb-dur">13:04</span>
+        </div>
+        <div class="nnn-vcard-body">
+          <h3 class="nnn-vcard-title">恋爱记账本：我们把情绪也写进了预算表</h3>
+          <p class="nnn-vcard-excerpt">一份两人共享的表格，记录了开销，也记录了争吵与和解。意外地好笑又动人。</p>
+          <div class="nnn-vcard-foot">
+            <div class="nnn-author"><span class="nnn-avatar" style="background:#7c5cff">柯</span>柯一白</div>
+            <div class="nnn-stat-group">
+              <button class="nnn-icon-btn nnn-like" aria-label="点赞"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.6-7-9.4A4.1 4.1 0 0 1 12 7a4.1 4.1 0 0 1 7 3.6C19 15.4 12 20 12 20z"/></svg><span>6,730</span></button>
+              <button class="nnn-icon-btn nnn-save" aria-label="收藏"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v16l-6-4-6 4z"/></svg></button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 专题企划 ===== -->
+<section class="nnn-section nnn-section-tint" id="nnn-topics">
+  <div class="nnn-wrap">
+    <div class="nnn-sec-head">
+      <div class="nnn-eyebrow">专题企划</div>
+      <h2 class="nnn-sec-title">官方企划：用一整季的时间讲完一个议题</h2>
+      <p class="nnn-sec-desc">专题是男男内容生态的骨架。每个企划由编辑部发起，联合多位创作者共同完成。</p>
+    </div>
+    <div class="nnn-topic-grid">
+      <article class="nnn-topic">
+        <div class="nnn-topic-bg">
+          <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 420'%3E%3Cdefs%3E%3ClinearGradient id='t1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232a1e4d'/%3E%3Cstop offset='1' stop-color='%23ff6f9c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='600' height='420' fill='url(%23t1)'/%3E%3Ccircle cx='300' cy='210' r='118' fill='none' stroke='%23ffffff' stroke-width='3' opacity='.45'/%3E%3Ccircle cx='300' cy='210' r='74' fill='none' stroke='%23ffffff' stroke-width='3' opacity='.6'/%3E%3Ccircle cx='300' cy='210' r='30' fill='%23ffffff' opacity='.75'/%3E%3Cpath d='M300 92v-40M300 368v-40M182 210h-40M458 210h-40' stroke='%23ffffff' stroke-width='3' opacity='.5'/%3E%3C/svg%3E" alt="专题封面：同频，真实关系纪实企划第二季">
+        </div>
+        <span class="nnn-topic-status">更新至 06 集</span>
+        <h3>同频 · 真实关系纪实企划</h3>
+        <p>六组创作者，六段关系。用纪实手法记录他们在同一屋檐下的日常与分歧。</p>
+      </article>
+
+      <article class="nnn-topic">
+        <div class="nnn-topic-bg">
+          <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 420'%3E%3Cdefs%3E%3ClinearGradient id='t2' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23e6f7f2'/%3E%3Cstop offset='1' stop-color='%233ec6b4'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='600' height='420' fill='url(%23t2)'/%3E%3Cg stroke='%23ffffff' stroke-width='4' fill='none' opacity='.7'%3E%3Cpath d='M60 320c90-70 150-20 220-90s160-40 260-110'/%3E%3C/g%3E%3Ccircle cx='140' cy='120' r='46' fill='%23ffffff' opacity='.55'/%3E%3Crect x='360' y='248' width='170' height='104' rx='14' fill='%23ffffff' opacity='.5'/%3E%3C/svg%3E" alt="专题封面：城市里的第三种空间，关于公共生活的观察">
+        </div>
+        <span class="nnn-topic-status">已完结 · 04 集</span>
+        <h3>城市里的第三种空间</h3>
+        <p>从书店到球场，记录那些不属于家也不属于公司的地方，如何容纳真实的关系。</p>
+      </article>
+
+      <article class="nnn-topic">
+        <div class="nnn-topic-bg">
+          <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 420'%3E%3Cdefs%3E%3ClinearGradient id='t3' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231c1730'/%3E%3Cstop offset='1' stop-color='%23f5b544'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='600' height='420' fill='url(%23t3)'/%3E%3Cg fill='%23ffffff' opacity='.72'%3E%3Crect x='80' y='232' width='40' height='120' rx='8'/%3E%3Crect x='150' y='196' width='40' height='156' rx='8'/%3E%3Crect x='220' y='260' width='40' height='92' rx='8'/%3E%3Crect x='290' y='170' width='40' height='182' rx='8'/%3E%3C/g%3E%3Ccircle cx='452' cy='150' r='62' fill='%23ffffff' opacity='.4'/%3E%3C/svg%3E" alt="专题封面：夜行者计划，凌晨城市的十种职业">
+        </div>
+        <span class="nnn-topic-status">更新至 03 集</span>
+        <h3>夜行者计划</h3>
+        <p>跟拍十位在深夜工作的人，听他们讲述白天听不到的故事与判断。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 创作者矩阵 ===== -->
+<section class="nnn-section" id="nnn-creators">
+  <div class="nnn-wrap">
+    <div class="nnn-sec-head">
+      <div class="nnn-eyebrow">创作者矩阵</div>
+      <h2 class="nnn-sec-title">这些作者，构成了男男的内容生态</h2>
+      <p class="nnn-sec-desc">他们来自纪录片、设计、餐饮、心理等不同背景，共同点是愿意把镜头对准真实生活。</p>
+    </div>
+    <div class="nnn-creator-grid">
+      <article class="nnn-creator">
+        <span class="nnn-avatar nnn-avatar-lg" style="background:linear-gradient(135deg,#7c5cff,#ff6f9c)">周</span>
+        <h3>周以宁</h3>
+        <div class="nnn-creator-field">纪录片导演 · 家庭议题</div>
+        <p>前电视台编导，擅长长周期跟拍。作品以克制、耐心著称，代表作《出柜之后的第一年》。</p>
+        <div class="nnn-creator-stats">
+          <div><b>42</b>作品</div>
+          <div><b>18.6万</b>关注</div>
+        </div>
+      </article>
+      <article class="nnn-creator">
+        <span class="nnn-avatar nnn-avatar-lg" style="background:linear-gradient(135deg,#3ec6b4,#4a6f9e)">沈</span>
+        <h3>沈子夜</h3>
+        <div class="nnn-creator-field">电台主播 · 深夜故事</div>
+        <p>十年夜班电台经验，声音温暖，擅长把一段陌生人对话讲成完整的叙事。每周更新两期。</p>
+        <div class="nnn-creator-stats">
+          <div><b>96</b>作品</div>
+          <div><b>24.1万</b>关注</div>
+        </div>
+      </article>
+      <article class="nnn-creator">
+        <span class="nnn-avatar nnn-avatar-lg" style="background:linear-gradient(135deg,#f5b544,#ff9dbb)">阿</span>
+        <h3>阿栗与小鱼</h3>
+        <div class="nnn-creator-field">生活记录 · 家居收纳</div>
+        <p>一对同居五年的伴侣，用镜头记录小户型改造与日常协作，风格轻松、有实操性。</p>
+        <div class="nnn-creator-stats">
+          <div><b>61</b>作品</div>
+          <div><b>15.3万</b>关注</div>
+        </div>
+      </article>
+      <article class="nnn-creator">
+        <span class="nnn-avatar nnn-avatar-lg" style="background:linear-gradient(135deg,#5a3ee0,#3ec6b4)">何</span>
+        <h3>何以为剪</h3>
+        <div class="nnn-creator-field">剪辑师 · 创作幕后</div>
+        <p>八年影视后期经验，专注把复杂剪辑流程讲清楚。平台的剪辑工作坊常驻导师。</p>
+        <div class="nnn-creator-stats">
+          <div><b>38</b>作品</div>
+          <div><b>9.7万</b>关注</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 作品墙 ===== -->
+<section class="nnn-section nnn-section-tint" id="nnn-wall">
+  <div class="nnn-wrap">
+    <div class="nnn-sec-head">
+      <div class="nnn-eyebrow">影像墙</div>
+      <h2 class="nnn-sec-title">用户作品墙：来自社区的日常切片</h2>
+      <p class="nnn-sec-desc">每周从投稿中选出的影像片段，风格各异，但都足够真实。</p>
+    </div>
+    <div class="nnn-wall">
+      <div class="nnn-wall-item nnn-wall-big">
+        <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 800'%3E%3Cdefs%3E%3ClinearGradient id='w1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ffd9e6'/%3E%3Cstop offset='1' stop-color='%237c5cff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='800' fill='url(%23w1)'/%3E%3Ccircle cx='560' cy='220' r='140' fill='%23ffffff' opacity='.3'/%3E%3Cpath d='M0 620c180-140 300-40 420 30s230 20 380-80v230H0z' fill='%231c1730' opacity='.55'/%3E%3Crect x='120' y='180' width='260' height='180' rx='16' fill='%23ffffff' opacity='.72'/%3E%3Crect x='152' y='216' width='150' height='12' rx='6' fill='%237c5cff'/%3E%3Crect x='152' y='246' width='196' height='9' rx='4' fill='%23c9bdf5'/%3E%3Crect x='152' y='272' width='120' height='9' rx='4' fill='%23c9bdf5'/%3E%3C/svg%3E" alt="作品墙图片：阳台上的下午，两个人的第十七个周末">
+        <div class="nnn-wall-cap">阳台上的下午 · 第十七个周末</div>
+      </div>
+      <div class="nnn-wall-item">
+        <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f5b544'/%3E%3Ccircle cx='100' cy='90' r='42' fill='%23ffffff' opacity='.62'/%3E%3Crect y='210' width='400' height='90' fill='%23b06a94' opacity='.6'/%3E%3Crect x='230' y='100' width='120' height='82' rx='10' fill='%23ffffff' opacity='.7'/%3E%3C/svg%3E" alt="作品墙图片：厨房窗台的黄昏逆光">
+        <div class="nnn-wall-cap">厨房窗台 · 黄昏逆光</div>
+      </div>
+      <div class="nnn-wall-item nnn-wall-wide">
+        <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 400'%3E%3Cdefs%3E%3ClinearGradient id='w2' x1='0' y1='0' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23e6f7f2'/%3E%3Cstop offset='1' stop-color='%233ec6b4'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='400' fill='url(%23w2)'/%3E%3Cg stroke='%23ffffff' stroke-width='3' opacity='.7' fill='none'%3E%3Cpath d='M0 300h240l60-80 80 130 70-70h170l60-90 80 60'/%3E%3C/g%3E%3Ccircle cx='640' cy='100' r='46' fill='%23ffffff' opacity='.66'/%3E%3C/svg%3E" alt="作品墙图片：自行车道的黄昏，一次没有目的地的骑行">
+        <div class="nnn-wall-cap">自行车道 · 没有目的地的骑行</div>
+      </div>
+      <div class="nnn-wall-item">
+        <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%231c1730'/%3E%3Cg fill='%23f5b544'%3E%3Crect x='60' y='170' width='24' height='90' rx='6'/%3E%3Crect x='110' y='130' width='24' height='130' rx='6'/%3E%3Crect x='160' y='190' width='24' height='70' rx='6'/%3E%3C/g%3E%3Ccircle cx='300' cy='120' r='52' fill='%23ff6f9c' opacity='.7'/%3E%3C/svg%3E" alt="作品墙图片：夜班结束后的第一杯热咖啡">
+        <div class="nnn-wall-cap">夜班结束 · 第一杯热咖啡</div>
+      </div>
+      <div class="nnn-wall-item nnn-wall-tall">
+        <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 600'%3E%3Cdefs%3E%3ClinearGradient id='w3' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23c9b6ff'/%3E%3Cstop offset='1' stop-color='%235a3ee0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='600' fill='url(%23w3)'/%3E%3Ccircle cx='200' cy='220' r='88' fill='%23ffffff' opacity='.35'/%3E%3Crect x='72' y='350' width='256' height='14' rx='7' fill='%23ffffff' opacity='.6'/%3E%3Crect x='110' y='386' width='180' height='10' rx='5' fill='%23ffffff' opacity='.4'/%3E%3Crect x='140' y='414' width='120' height='10' rx='5' fill='%23ffffff' opacity='.3'/%3E%3C/svg%3E" alt="作品墙图片：雨天的公交站，等了四十分钟的人">
+        <div class="nnn-wall-cap">雨天公交站 · 四十分钟</div>
+      </div>
+      <div class="nnn-wall-item">
+        <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f7f2e6'/%3E%3Crect y='220' width='400' height='80' fill='%238c7355' opacity='.55'/%3E%3Cg fill='%236b5236'%3E%3Crect x='84' y='96' width='12' height='124'/%3E%3Crect x='180' y='70' width='12' height='150'/%3E%3Crect x='278' y='110' width='12' height='110'/%3E%3C/g%3E%3Crect x='56' y='80' width='264' height='14' rx='4' fill='%236b5236'/%3E%3C/svg%3E" alt="作品墙图片：书架最上层，他留下的那本书">
+        <div class="nnn-wall-cap">书架最上层 · 那本书</div>
+      </div>
+      <div class="nnn-wall-item nnn-wall-wide">
+        <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 400'%3E%3Cdefs%3E%3ClinearGradient id='w4' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ffe3ef'/%3E%3Cstop offset='1' stop-color='%23ff9dbb'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='400' fill='url(%23w4)'/%3E%3Ccircle cx='252' cy='190' r='72' fill='%23ffffff' opacity='.7'/%3E%3Ccircle cx='546' cy='190' r='72' fill='%23ffffff' opacity='.55'/%3E%3Crect x='352' y='182' width='96' height='10' rx='5' fill='%23b06a94' opacity='.8'/%3E%3C/svg%3E" alt="作品墙图片：两只杯子并排放在餐桌上的合影">
+        <div class="nnn-wall-cap">两只杯子 · 并排放好</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 评价 ===== -->
+<section class="nnn-section" id="nnn-voices">
+  <div class="nnn-wrap">
+    <div class="nnn-sec-head">
+      <div class="nnn-eyebrow">社区口碑</div>
+      <h2 class="nnn-sec-title">来自观众与创作者的真实反馈</h2>
+      <p class="nnn-sec-desc">我们珍惜每一条反馈，它们是这个平台持续运营下去的理由。</p>
+    </div>
+    <div class="nnn-quote-grid">
+      <article class="nnn-quote">
+        <div class="nnn-stars">★★★★★</div>
+        <p class="nnn-quote-text">看《厨房里的十年》时我一直在想，原来洗碗这件事也可以拍得这么有重量。没有煽情配乐，就是两个人在说谁又不擦灶台，但我看完了三遍。</p>
+        <div class="nnn-quote-foot">
+          <span class="nnn-avatar" style="background:#7c5cff">白</span>
+          <div><div class="nnn-quote-name">白露未晞</div><div class="nnn-quote-role">观众 · 连续订阅 3 年</div></div>
+        </div>
+      </article>
+      <article class="nnn-quote">
+        <div class="nnn-stars">★★★★★</div>
+        <p class="nnn-quote-text">作为创作者，最打动我的是编辑部改稿时的那句「这段可以留白」。他们真的尊重表达，不会为了节奏把真实的东西剪掉。</p>
+        <div class="nnn-quote-foot">
+          <span class="nnn-avatar" style="background:#3ec6b4">南</span>
+          <div><div class="nnn-quote-name">南野</div><div class="nnn-quote-role">签约创作者 · 纪实方向</div></div>
+        </div>
+      </article>
+      <article class="nnn-quote">
+        <div class="nnn-stars">★★★★☆</div>
+        <p class="nnn-quote-text">专题企划的质量很稳定，尤其是城市空间那一季。唯一的小建议是希望能多一些幕后花絮，想看成片之前的取舍过程。</p>
+        <div class="nnn-quote-foot">
+          <span class="nnn-avatar" style="background:#f5b544">一</span>
+          <div><div class="nnn-quote-name">一叶知秋</div><div class="nnn-quote-role">观众 · 影像爱好者</div></div>
+        </div>
+      </article>
+      <article class="nnn-quote">
+        <div class="nnn-stars">★★★★★</div>
+        <p class="nnn-quote-text">我和伴侣一起看了《合租第七年》，看完在沙发上聊了两个小时。这种内容在别的地方很难找到，它不急着给你答案。</p>
+        <div class="nnn-quote-foot">
+          <span class="nnn-avatar" style="background:#ff6f9c">小</span>
+          <div><div class="nnn-quote-name">小满</div><div class="nnn-quote-role">观众 · 社区活跃用户</div></div>
+        </div>
+      </article>
+      <article class="nnn-quote">
+        <div class="nnn-stars">★★★★★</div>
+        <p class="nnn-quote-text">投稿流程比想象中清晰，隐私确认和授权说明写得很细，这一点让我决定把第一个作品交到这里。</p>
+        <div class="nnn-quote-foot">
+          <span class="nnn-avatar" style="background:#5a3ee0">木</span>
+          <div><div class="nnn-quote-name">木也</div><div class="nnn-quote-role">新人创作者 · 首次投稿</div></div>
+        </div>
+      </article>
+      <article class="nnn-quote">
+        <div class="nnn-stars">★★★★☆</div>
+        <p class="nnn-quote-text">剪辑工作坊的干货很密，最后一节课把 42 小时素材的取舍逻辑完整拆了一遍，比很多付费课讲得清楚。</p>
+        <div class="nnn-quote-foot">
+          <span class="nnn-avatar" style="background:#4a6f9e">程</span>
+          <div><div class="nnn-quote-name">程野</div><div class="nnn-quote-role">学员 · 剪辑工作坊第二期</div></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 动态与榜单 ===== -->
+<section class="nnn-section nnn-section-tint" id="nnn-news">
+  <div class="nnn-wrap">
+    <div class="nnn-sec-head">
+      <div class="nnn-eyebrow">企业动态</div>
+      <h2 class="nnn-sec-title">官方发布与本周热度榜单</h2>
+      <p class="nnn-sec-desc">品牌资讯、内容更新与社区榜单，每周同步一次。</p>
+    </div>
+    <div class="nnn-split">
+      <div class="nnn-news">
+        <div class="nnn-news-item">
+          <div class="nnn-news-date">11-18<span>2026</span></div>
+          <div>
+            <h3>「同频」第二季第六集上线，收录城市夜班场景</h3>
+            <p>本集由周以宁执导，跟拍一位急诊科护士与伴侣的交接班日常，完整片长 34 分钟，已同步至专题页。</p>
+          </div>
+        </div>
+        <div class="nnn-news-item">
+          <div class="nnn-news-date">11-15<span>2026</span></div>
+          <div>
+            <h3>年度创作者比赛「真实一分钟」开启报名</h3>
+            <p>比赛面向所有注册创作者，投稿时长不超过 60 秒，主题为日常切片。报名截止 12 月 20 日，入选作品将进入年度放映。</p>
+          </div>
+        </div>
+        <div class="nnn-news-item">
+          <div class="nnn-news-date">11-11<span>2026</span></div>
+          <div>
+            <h3>官方发布内容安全与隐私保护指引 2.0 版本</h3>
+            <p>新版指引细化了出镜同意、信息脱敏与未成年保护条款，所有上线内容将执行更严格的审校流程。</p>
+          </div>
+        </div>
+        <div class="nnn-news-item">
+          <div class="nnn-news-date">11-06<span>2026</span></div>
+          <div>
+            <h3>与城市文化机构达成影像档案共建合作</h3>
+            <p>双方将共同归档近五年的城市情感影像素材，并向研究机构开放脱敏后的观察数据，推动行业公共讨论。</p>
+          </div>
+        </div>
+      </div>
+
+      <aside class="nnn-rank">
+        <h3>本周热度榜 <em>TOP 6</em></h3>
+        <div class="nnn-rank-item"><span class="nnn-rank-no">1</span><span class="nnn-rank-title">厨房里的十年：洗碗这件小事</span><span class="nnn-rank-heat">9.8万</span></div>
+        <div class="nnn-rank-item"><span class="nnn-rank-no">2</span><span class="nnn-rank-title">出柜之后的第一年：五个家庭</span><span class="nnn-rank-heat">8.2万</span></div>
+        <div class="nnn-rank-item"><span class="nnn-rank-no">3</span><span class="nnn-rank-title">父亲第一次看我的短片</span><span class="nnn-rank-heat">6.7万</span></div>
+        <div class="nnn-rank-item"><span class="nnn-rank-no">4</span><span class="nnn-rank-title">夜班电台：凌晨两点的热线</span><span class="nnn-rank-heat">5.4万</span></div>
+        <div class="nnn-rank-item"><span class="nnn-rank-no">5</span><span class="nnn-rank-title">两个人的早餐计划</span><span class="nnn-rank-heat">4.1万</span></div>
+        <div class="nnn-rank-item"><span class="nnn-rank-no">6</span><span class="nnn-rank-title">剪辑师的一天：42 小时素材</span><span class="nnn-rank-heat">3.6万</span></div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="nnn-section" id="nnn-faq">
+  <div class="nnn-wrap">
+    <div class="nnn-sec-head">
+      <div class="nnn-eyebrow">帮助中心</div>
+      <h2 class="nnn-sec-title">常见问题</h2>
+      <p class="nnn-sec-desc">关于内容、投稿、隐私与合作的说明，点击展开查看。</p>
+    </div>
+    <div class="nnn-faq">
+      <details>
+        <summary>男男官方网站的内容定位是什么？</summary>
+        <p>平台专注多元情感与真实关系影像，涵盖纪实短片、人物访谈、城市记录与生活经验分享。我们不追求猎奇视角，而是以专业拍摄与长期跟访呈现关系的完整面貌，所有内容均为原创或正版授权。</p>
+      </details>
+      <details>
+        <summary>投稿需要具备哪些条件？</summary>
+        <p>年满 18 周岁、拥有完整版权的原创视频即可投稿。出镜人员需签署同意书，涉及他人隐私的场景需完成脱敏处理。编辑部会在 7 个工作日内回复初审结果，通过后进入联合打磨阶段。</p>
+      </details>
+      <details>
+        <summary>平台如何保护出镜者的隐私？</summary>
+        <p>我们执行出镜同意、内容终审与信息脱敏三道流程。创作者与出镜者对成片拥有确认权，可要求删减特定片段。涉及住址、工作单位等可识别信息的内容，我们会做模糊或替代处理。</p>
+      </details>
+      <details>
+        <summary>内容更新频率是怎样的？</summary>
+        <p>焦点内容每周更新一次，专题企划按季推进，热门视频流由创作者自主更新。企业动态与榜单每周一同步，年度会发布内容生态观察报告。</p>
+      </details>
+      <details>
+        <summary>品牌合作有哪些方式？</summary>
+        <p>我们提供联合企划、内容共创与影像档案共建三种合作方式。合作方需与平台调性一致，且不干预创作判断。具体方案可通过页面底部的合作联系入口提交需求。</p>
+      </details>
+      <details>
+        <summary>是否可以下载内容用于非商业用途？</summary>
+        <p>平台内容版权归创作者与平台共有。个人学习等非商业用途可在保留完整署名与来源信息的前提下申请授权，商业用途需另行取得书面许可。</p>
+      </details>
+      <details>
+        <summary>社区对评论与互动有什么规则？</summary>
+        <p>我们鼓励具体、友善、有信息量的讨论，禁止人身攻击、泄露他人隐私与任何形式的内容搬运。违规内容会被移除，严重者将限制账号功能。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 联系 ===== -->
+<section class="nnn-section" id="nnn-cta">
+  <div class="nnn-wrap">
+    <div class="nnn-cta">
+      <div class="nnn-cta-grid">
+        <div>
+          <h2>把你的故事，交给一个值得信赖的内容品牌</h2>
+          <p>无论是投稿、合作还是反馈，男男官方网站都欢迎你直接联系我们。编辑部会在三个工作日内回复，每一条来信都会被认真读完。</p>
+          <div class="nnn-cta-actions">
+            <button class="nnn-btn nnn-btn-primary" id="nnnContactBtn">提交合作需求</button>
+            <button class="nnn-btn nnn-btn-ghost" id="nnnShareBtn">分享官网首页</button>
+          </div>
+        </div>
+        <div class="nnn-cta-info">
+          <div class="nnn-cta-info-item"><b>投稿邮箱</b>create@nannan-studio.example</div>
+          <div class="nnn-cta-info-item"><b>品牌合作</b>brand@nannan-studio.example</div>
+          <div class="nnn-cta-info-item"><b>社区支持</b>support@nannan-studio.example</div>
+          <div class="nnn-cta-info-item"><b>办公地址</b>城市文化创意园 B 座 5 层 · 影像内容中心</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== 页脚 ===== -->
+<footer class="nnn-footer">
+  <div class="nnn-wrap">
+    <div class="nnn-footer-grid">
+      <div>
+        <div class="nnn-footer-brand">
+          <span class="nnn-brand-mark" style="width:36px;height:36px;font-size:17px;border-radius:11px">男</span>
+          <span style="color:#fff;font-weight:800;font-size:17px">男男 · 影像社区</span>
+        </div>
+        <p>男男官方网站是专注多元情感表达的视频品牌，致力于为创作者与企业搭建高品质、可持续的内容生态。我们坚持原创、正版与专业，以匠心打磨每一支内容。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#nnn-focus">焦点内容</a></li>
+          <li><a href="#nnn-feed">热门视频</a></li>
+          <li><a href="#nnn-topics">专题企划</a></li>
+          <li><a href="#nnn-wall">影像墙</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于品牌</h4>
+        <ul>
+          <li><a href="#nnn-about">关键词解析</a></li>
+          <li><a href="#nnn-creators">创作者矩阵</a></li>
+          <li><a href="#nnn-news">企业动态</a></li>
+          <li><a href="#nnn-faq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与社区</h4>
+        <ul>
+          <li><a href="#nnn-cta">投稿入口</a></li>
+          <li><a href="#nnn-cta">品牌合作</a></li>
+          <li><a href="#nnn-faq">隐私说明</a></li>
+          <li><a href="#nnn-voices">用户反馈</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="nnn-footer-bottom">
+      <span>© 2019–2026 男男影像社区 官方网站 · 版权所有</span>
+      <span>内容备案：影像内容中心 · 持续运营中</span>
+      <span>官方发布，转载请注明出处</span>
+    </div>
+  </div>
+</footer>
+
+<button class="nnn-to-top" id="nnnToTop" aria-label="回到顶部">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<div class="nnn-toast" id="nnnToast"></div>
+
+<div class="nnn-modal" id="nnnModal">
+  <div class="nnn-modal-card">
+    <h3 id="nnnModalTitle">投稿入口</h3>
+    <p id="nnnModalDesc">请简单描述你的作品主题与合作意向，编辑部会在三个工作日内回复。</p>
+    <textarea id="nnnModalInput" placeholder="例如：一支关于城市夜班工作者的 8 分钟纪录短片……"></textarea>
+    <div class="nnn-modal-actions">
+      <button class="nnn-btn nnn-btn-ghost" id="nnnModalCancel">取消</button>
+      <button class="nnn-btn nnn-btn-primary" id="nnnModalOk">提交</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var nnn = {};
+
+  /* ---- Toast ---- */
+  var toastEl = document.getElementById('nnnToast');
+  var toastTimer = null;
+  nnn.toast = function(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('is-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('is-show'); }, 2200);
+  };
+
+  /* ---- 移动端导航 ---- */
+  var navToggle = document.getElementById('nnnNavToggle');
+  var nav = document.getElementById('nnnNav');
+  navToggle.addEventListener('click', function(){
+    var open = nav.classList.toggle('is-open');
+    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    navToggle.textContent = open ? '✕' : '☰';
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){
+      nav.classList.remove('is-open');
+      navToggle.setAttribute('aria-expanded','false');
+      navToggle.textContent = '☰';
+    }
+  });
+
+  /* ---- 搜索反馈 ---- */
+  var searchInput = document.getElementById('nnnSearchInput');
+  var searchBtn = document.getElementById('nnnSearchBtn');
+  var hint = document.getElementById('nnnSearchHint');
+  var feedCards = Array.prototype.slice.call(document.querySelectorAll('#nnnFeedGrid .nnn-vcard'));
+
+  function doSearch(){
+    var kw = searchInput.value.trim();
+    if(!kw){
+      hint.classList.remove('is-show');
+      feedCards.forEach(function(c){ c.style.display=''; });
+      nnn.toast('请输入想查找的关键词');
+      return;
+    }
+    var hit = 0;
+    feedCards.forEach(function(c){
+      var txt = c.textContent || '';
+      var match = txt.indexOf(kw) > -1;
+      c.style.display = match ? '' : 'none';
+      if(match) hit++;
+    });
+    hint.classList.add('is-show');
+    hint.innerHTML = '搜索「<strong>' + kw.replace(/[<>&]/g,'') + '</strong>」：热门视频中找到 ' + hit + ' 条相关内容' + (hit ? '，已为你筛选显示。' : '，换个关键词试试，例如「访谈」或「城市」。');
+    if(!hit){ feedCards.forEach(function(c){ c.style.display=''; }); }
+  }
+  searchBtn.addEventListener('click', doSearch);
+  searchInput.addEventListener('keydown', function(e){ if(e.key === 'Enter'){ e.preventDefault(); doSearch(); } });
+  searchInput.addEventListener('input', function(){
+    if(!searchInput.value.trim()){ hint.classList.remove('is-show'); feedCards.forEach(function(c){ c.style.display=''; }); }
+  });
+
+  /* ---- 标签筛选 ---- */
+  var filterRow = document.getElementById('nnnFilterRow');
+  filterRow.addEventListener('click', function(e){
+    var btn = e.target.closest('.nnn-filter');
+    if(!btn) return;
+    filterRow.querySelectorAll('.nnn-filter').forEach(function(b){ b.classList.remove('is-on'); });
+    btn.classList.add('is-on');
+    var cat = btn.getAttribute('data-filter');
+    feedCards.forEach(function(c){
+      var show = (cat === 'all') || (c.getAttribute('data-cat') === cat);
+      c.style.display = show ? '' : 'none';
+    });
+  });
+
+  /* ---- 点赞 / 收藏 ---- */
+  document.addEventListener('click', function(e){
+    var like = e.target.closest('.nnn-like');
+    if(like){
+      var span = like.querySelector('span');
+      var num = span.textContent.replace(/,/g,'');
+      var n = parseInt(num, 10);
+      var liked = like.classList.toggle('is-liked');
+      if(!isNaN(n)){
+        n = liked ? n + 1 : Math.max(0, n - 1);
+        span.textContent = n >= 10000 ? (n/10000).toFixed(1) + '万' : n.toLocaleString('en-US');
+      }
+      nnn.toast(liked ? '已点赞，感谢你的支持' : '已取消点赞');
+      return;
+    }
+    var save = e.target.closest('.nnn-save');
+    if(save){
+      var on = save.classList.toggle('is-saved');
+      nnn.toast(on ? '已收藏到你的片单' : '已从片单移除');
+    }
+  });
+
+  /* ---- 标签 hover 动效已在 CSS 中 ---- */
+
+  /* ---- 复制链接 / 分享 ---- */
+  document.getElementById('nnnShareBtn').addEventListener('click', function(){
+    var link = 'https://nannan-studio.example';
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(link).then(function(){
+        nnn.toast('官网首页链接已复制，欢迎分享给朋友');
+      }).catch(function(){
+        nnn.toast('分享提示：请通过浏览器地址栏复制链接');
+      });
+    } else {
+      nnn.toast('分享提示：请通过浏览器地址栏复制链接');
+    }
+  });
+
+  /* ---- 弹窗 ---- */
+  var modal = document.getElementById('nnnModal');
+  var modalTitle = document.getElementById('nnnModalTitle');
+  var modalDesc = document.getElementById('nnnModalDesc');
+  var modalInput = document.getElementById('nnnModalInput');
+  var currentModal = 'submit';
+
+  function openModal(type){
+    currentModal = type;
+    if(type === 'submit'){
+      modalTitle.textContent = '投稿入口';
+      modalDesc.textContent = '请简单描述你的作品主题与合作意向，编辑部会在三个工作日内回复。';
+      modalInput.placeholder = '例如：一支关于城市夜班工作者的 8 分钟纪录短片……';
+    } else {
+      modalTitle.textContent = '合作需求';
+      modalDesc.textContent = '请填写品牌名称、合作方向与预期时间，我们会安排专人对接。';
+      modalInput.placeholder = '例如：联合企划 · 关于城市公共空间的系列短片……';
+    }
+    modalInput.value = '';
+    modal.classList.add('is-open');
+    setTimeout(function(){ modalInput.focus(); }, 60);
+  }
+  function closeModal(){ modal.classList.remove('is-open'); }
+
+  document.getElementById('nnnSubmitBtn').addEventListener('click', function(){ openModal('submit'); });
+  document.getElementById('nnnContactBtn').addEventListener('click', function(){ openModal('brand'); });
+  document.getElementById('nnnModalCancel').addEventListener('click', closeModal);
+  document.getElementById('nnnModalOk').addEventListener('click', function(){
+    var val = modalInput.value.trim();
+    if(!val){ nnn.toast('请先填写需求说明'); return; }
+    closeModal();
+    nnn.toast(currentModal === 'submit' ? '投稿意向已记录，编辑部将尽快联系你' : '合作需求已提交，感谢你的信任');
+  });
+  modal.addEventListener('click', function(e){ if(e.target === modal) closeModal(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && modal.classList.contains('is-open')) closeModal(); });
+
+  /* ---- 回到顶部 ---- */
+  var toTop = document.getElementById('nnnToTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 520){ toTop.classList.add('is-show'); }
+    else { toTop.classList.remove('is-show'); }
+  }, {passive:true});
+  toTop.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+
+  /* ---- 导航高亮 ---- */
+  var sections = ['nnn-hero','nnn-focus','nnn-feed','nnn-topics','nnn-creators','nnn-news','nnn-faq'];
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('.nnn-nav a'));
+  window.addEventListener('scroll', function(){
+    var pos = window.scrollY + 180;
+    var current = 'nnn-hero';
+    sections.forEach(function(id){
+      var el = document.getElementById(id);
+      if(el && el.offsetTop <= pos) current = id;
+    });
+    navLinks.forEach(function(a){
+      a.classList.toggle('is-active', a.getAttribute('href') === '#' + current);
+    });
+  }, {passive:true});
+})();
+</script>
+</body>
+          </html>
